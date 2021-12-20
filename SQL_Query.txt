@@ -1,0 +1,85 @@
+Create table Account_details (
+
+ACCT_NUMBER int primary key identity(11112881,1),
+
+ACCT_NAME varchar(20),
+
+ACCT_OPEN_DATE date,
+
+BRANCH Varchar(20))
+
+
+
+insert into Account_details values ('Shubham','2015/12/09','MUMBAI')
+
+insert into Account_details values ('Rihan','2016/01/12','Jaipur')
+
+insert into Account_details values ('Sheetal','2017/08/11','GOA')
+
+insert into Account_details values ('Priyanka','2017/01/01','Chennai')
+
+insert into Account_details values ('Manik','2015/01/08','Agra')
+
+insert into Account_details values ('Veena','2021/01/01','Patna')
+
+insert into Account_details values ('Rohan','2019/07/01','Pune')
+
+insert into Account_details values ('Laxmi',GETDATE(),'rohatak')
+
+insert into Account_details values ('Jinal',GETDATE(),'Indore')
+
+
+
+select * from Account_details
+
+*************************************************************************************************
+Create Table customer(C_ID varchar(5) primary key ,CNAME varchar(20),Loc varchar(20))
+
+
+
+
+insert into customer values('C1','AMIT','PUNE')
+insert into customer values('C2','Sumit','Delhi')
+insert into customer values('C3','varun','Mumbai')
+insert into customer values('C4','snehal','Latur')
+insert into customer values('C5','Raj','Sangli')
+insert into customer values('C6','Mohit','Satara')
+
+
+
+select * from customer
+
+
+
+create table orders(OID int primary key, CID varchar(5),groceries varchar(20))
+
+
+
+insert into orders values(1,'C2','almonds')
+insert into orders values(2,'C3','deo')
+insert into orders values(3,'C1','milk')
+insert into orders values(4,'C2','soap')
+insert into orders values(5,'C4','dishes')
+insert into orders values(6,'C2','rice')
+
+
+
+select * from orders
+********************************************************************************************
+create table over_Test(EMPID int, FirstName varchar(20),Gender varchar(2),salary int)
+
+
+
+insert into over_Test values(1,'Mohini','F',1000)
+insert into over_Test values(2,'Rohit','M',2000)
+insert into over_Test values(3,'Amit','M',4000)
+insert into over_Test values(4,'Sonal','F',5000)
+insert into over_Test values(5,'Minal','F',6000)
+insert into over_Test values(6,'Amar','M',3600)
+insert into over_Test values(7,'Shital','F',4500)
+insert into over_Test values(8,'Sohil','M',6000)
+insert into over_Test values(9,'praveen','F',9000)
+insert into over_Test values(10,'Mithali','F',9000)
+insert into over_Test values(11,'seema','F',9000)
+insert into over_Test values(12,'meena','F',10000)
+select * from over_Test
