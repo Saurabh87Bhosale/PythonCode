@@ -10,7 +10,5 @@ class student():
         print(self.address)
 obj=student(104,'saurabh','pune')
 obj.show()
-
-
-
-
+obj1=student(105,'priyanka','pune')
+obj1.show()
